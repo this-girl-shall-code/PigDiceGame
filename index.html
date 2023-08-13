@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="rules-section">
+        <div>
+            <button id="hide-rules">RULES</button>
+            <p>Pig is a simple dice game where players take turns to roll a single die as many times as they wish, adding all roll results to a running total, but losing their gained score for their turn if they roll a 1.<br><br>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
+            <ul>
+                <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+                <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+                <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+            </ul>
+            <p>The first player to score 100 or more points wins.</p>
+        </div>
+  </div>
+  
+  <section id="player1" class="player-sections">
+        <h1>PLAYER 1</h1>
+        <p id="p1-total-score" class="total">0</p>
+        <p id="p1-end-msg" class="total">Winner!</p>
+        <div class="current-score-container">
+            <p>CURRENT</p>
+            <p id="p1-current-score">0</p>
+        </div>
+  </section>
+  
+  <section id="player2" class="player-sections">
+        <h1>PLAYER 2</h1>
+        <p id="p2-total-score" class="total">0</p>
+        <p id="p2-end-msg" class="total">Winner!</p>
+        <div class="current-score-container">
+            <p>CURRENT</p>
+            <p id="p2-current-score">0</p>
+        </div>
+  </section>
+  
+  <button id="rules">RULES</button>  
+  <button id="new-game">NEW GAME</button>
+  <button id="roll">P1 ROLLS</button>
+  <button id="hold">HOLD</button>
+
+  <div id="dice-container">
+  
+        <div id="dice1" class="dice">
+            <div class="spot middle center"></div>
+        </div>
+    
+        <div id="dice2" class="dice">
+            <div class="spot top left"></div>
+            <div class="spot bottom right"></div>
+        </div>
+    
+        <div id="dice3" class="dice">
+            <div class="spot top left"></div>
+            <div class="spot  middle center"></div>
+            <div class="spot bottom right"></div>
+        </div>
+    
+        <div id="dice4" class="dice">
+            <div class="spot top left"></div>
+            <div class="spot top right"></div>
+            <div class="spot bottom left"></div>
+            <div class="spot bottom right"></div>
+        </div>
+    
+        <div id="dice5" class="dice">
+            <div class="spot top left"></div>
+            <div class="spot top right"></div>
+            <div class="spot  middle center"></div>
+            <div class="spot bottom left"></div>
+            <div class="spot bottom right"></div>
+        </div>
+    
+        <div id="dice6" class="dice">
+            <div class="spot top left"></div>
+            <div class="spot top right"></div>
+            <div class="spot middle left"></div>
+            <div class="spot middle right"></div>
+            <div class="spot bottom left"></div>
+            <div class="spot bottom right"></div>
+        </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>

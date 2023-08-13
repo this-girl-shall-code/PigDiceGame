@@ -1,0 +1,254 @@
+body{
+    font-family: 'Nunito', sans-serif;
+     width: 97%;
+     height: 100vh;
+     background-color: white;
+   }
+   
+   #rules-section{
+     display: none;
+     position: absolute;
+     max-width: 500px;
+     margin-top: 10px; 
+     margin-right: 18%;
+     margin-left: 18%;
+     margin-bottom: 400px;
+     background-color: rgba(255, 182, 193, 0.5);
+     border-radius: 20px;
+     padding: 30px 50px;
+     text-align: justify;
+     color: #FF7589;
+   }
+   
+   .player-sections{
+     display: ;
+     position: absolute;
+     top: 0;
+     width: 50%;
+     height: 103vh;
+     text-align: center;
+     color: #FF7589;
+   }
+   
+   #player1{
+     left: 0;
+   }
+   
+   #player2{
+     left: 50%;
+     border-left: 2px solid pink;
+   }
+   
+   .player-not-active{
+     background-color: rgba(0, 0, 0, 0.2);
+     color: white;
+     > div{
+       color: white;
+       background-color: rgba(0, 0, 0, 0.2);
+     }
+   }
+   
+   .total{
+     font-size: 70px;
+     padding-top: 45px;
+     margin-bottom: 25px;
+   }
+   
+   #p1-end-msg, #p2-end-msg{
+     font-size: 50px;
+     padding-top: 1px;
+     margin-top: 1px;
+     margin-bottom: -70px;
+     border: 15px double #FFF55C;
+     border-radius: 4px;
+     margin-left: 10px;
+     margin-right: 10px;
+     opacity: 0;
+     animation: ;
+   }
+   
+   @keyframes flash {
+     0% {border: 15px double #FFF55C;}
+     50% { border: 15px double white;}
+     0% { border: 15px double #FFF55C;} 
+   }
+   
+   .current-score-container{
+     display: inline-block;
+     width: 120px;
+     background-color: rgba(255, 182, 193, 0.4);
+     border-radius: 20px;
+     color: #FF7589;
+     font-weight: 600;
+     margin-top: 140px;
+   }
+   
+   button{
+     cursor: pointer;
+     position: relative;
+     display: flex;
+     width: 100px;
+     margin: 20px 10px 20px -50px;
+     border: 2px solid pink;
+     border-radius: 7px;
+     padding: 5px;
+     align-items: center;
+     justify-content: center;
+     left: 50%;
+     font-family: 'Nunito', sans-serif;
+     background-color: white;
+     color: #FF7589;
+     box-shadow: 100px rgba(255, 182, 193, 0.5);
+     font-weight: 600;
+   }
+   
+   button:hover{
+     transform: scale(1.03);
+   }
+   
+   button:active{
+     transform: scale(.9);
+   }
+   
+   #hide-rules{
+     margin-top: -20px;
+     margin-left: -45px;
+   }
+   
+   #roll {
+     position: absolute;
+     top: 68%;
+     display: none;
+   }
+   
+   #hold {
+     position: absolute;
+     top: 78%;
+     display: none;
+   }
+   
+   #dice-container{
+     display: flex;
+   }
+   
+   #dice1 {
+     position: absolute;
+     display: none;
+   }
+   
+   #dice2 {
+     position: absolute;
+     display: none;
+   }
+   
+   #dice3 {
+     position: absolute;
+     display: none;
+   }
+   
+   #dice4 {
+     position: absolute;
+     display: none;
+   }
+   
+   #dice5 {
+     position: absolute;
+     display: none;
+   }
+   
+   #dice6 {
+     position: absolute;
+     display: none;
+   }
+   
+   .dice{
+     left: 50%;
+     top: 50%;
+     width: 80px;
+       height: 80px;
+     background-color: pink;
+     box-shadow: inset 0 5px pink, inset 0 -5px #d398a1, inset 5px 0 #e0a1aa,
+           inset -5px 0 #e0a1aa;
+     border-radius: 10px; 
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     margin: 10px 10px 10px -40px;
+   }
+   
+   .spot{
+     background-color: red;
+     border-radius: 50%;
+     width: 15px;
+     height: 15px;
+     place-self: center;
+   }
+   
+   .top {
+     grid-row-start: 1;
+   }
+   
+   .middle {
+     grid-row-start: 2;
+   }
+   
+   .bottom {
+     grid-row-start: 3;
+   }
+   
+   .left {
+     grid-column-start: 1;
+   }
+   
+   .center {
+     grid-column-start: 2;
+   }
+   
+   .right {
+     grid-column-start: 3;
+   }
+   
+   
+   @media  (max-width: 500px){
+     
+     #rules-section{   
+       margin-right: 4%;
+       margin-left: 4%;
+       padding: 30px 40px 15px 40px;
+     }
+     
+     #p1-end-msg, #p2-end-msg{
+       font-size: 40px;
+     }
+     
+     .dice{
+       top: 35%;
+     }
+     
+     #rules{
+       margin-top: 20%;
+     }
+   
+     #roll {
+       position: absolute;
+       top: 53%;
+     }
+   
+     #hold {
+       position: absolute;
+       top: 60%;
+     }
+   
+     .current-score-container{
+       margin-top:160px;
+     }
+   
+   }
+   
+   @media only screen and (width >= 1030px) {
+     
+     #rules-section{
+       margin-left: 25%;
+       margin-right: 25%;
+     }
+   }
